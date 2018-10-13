@@ -55,13 +55,8 @@ class CreateAccountScreen extends React.Component {
 	  <View>
 	    <TouchableOpacity style={styles.btn}
             onPress={() => {
-            this.props.navigation.dispatch(StackActions.reset({
-              index: 0,
-              actions: [
-                NavigationActions.navigate({ routeName: 'CreateEmail' })
-              ],
-            }))
-          }}>
+              this.props.navigation.navigate('CreateEmail');
+            }}>
 		    <Image style={styles.btnImgLong} source={require("./assets/BTN_TEMPLATE.png")}/>
 			<View style={styles.btnText}>
 				<Text style={styles.btnFont}>Philanthropist</Text>
