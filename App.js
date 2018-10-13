@@ -9,6 +9,8 @@ import LinkBankAccountScreen from './src/LinkBankAccount.js'
 import LegalNameEntryScreen from './src/LegalNameEntry.js'
 import MainPageScreen from './src/MainPage.js'
 
+import firebase from './src/firebase.js'
+
 
 class CreateAccountScreen extends React.Component {
 

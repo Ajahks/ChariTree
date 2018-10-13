@@ -7,5 +7,5 @@ var config = {
   storageBucket: "charitree-61751.appspot.com",
   messagingSenderId: "700980738718"
 };
-var firebase = firebase.initializeApp(config);
+firebase.initializeApp(config);
 export default firebase;
