@@ -1,8 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, Button, Alert, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image, Button, Alert, TouchableOpacity, TextInput } from 'react-native';
 import { createStackNavigator, } from 'react-navigation';
 
 export default class CreateEmailScreen extends React.Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = { text: '' };
+  } 
+  
   render() {
     return (
 	<View style={styles.container}>
@@ -14,7 +20,6 @@ export default class CreateEmailScreen extends React.Component {
 	  {/* Spacer */}
       <View style={styles.spacing}>
       </View>
-	  
 	  
 	  
 	  {/* Prompt */}	
@@ -30,6 +35,14 @@ export default class CreateEmailScreen extends React.Component {
 	  <View style={styles.spacing}>
       </View>
 	  
+	  {/* Text Input */}
+	  <TextInput 
+	    style = {{height: 75, width: 300, borderColor: 'gray', borderWidth: 0}}
+		clearTextOnFocus
+		onChangeText={(text) => this.setState({text})}
+		placeholder = 'email@example.com'
+		value ={this.state.text}
+	  />
 	  
 	  
 	  {/* Spacer */}
@@ -79,16 +92,9 @@ const styles = StyleSheet.create({
 	flexDirection: 'column'
 	
   },
-  titlePnl: {
-	alignItems: 'center',
-	
-  },
+  
   spacing: {
 	flex: 0.1,
-  },
-  logo: {
-    width: 225,
-	height: 225
   },
   
   btn: {
