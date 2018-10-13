@@ -2,6 +2,10 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, Button, Alert, TouchableOpacity } from 'react-native';
 import { createStackNavigator,StackActions, NavigationActions } from 'react-navigation';
 import CreateEmailScreen from './src/CreateEmail.js'
+import PasswordScreen from './src/Password.js'
+import PhoneNumberScreen from './src/PhoneNumber.js'
+import DateOfBirthScreen from './src/DateOfBirth.js'
+import LinkBankAccountScreen from './src/LinkBankAccount.js'
 
 
 class CreateAccountScreen extends React.Component {
@@ -37,6 +41,7 @@ class CreateAccountScreen extends React.Component {
           source={require('./assets/ICN_LOGO.png')}
         />
         <Text style={styles.title}>Welcome to ChariTree.</Text>
+        <Text style={styles.subtitle}>Create an account.</Text>
       </View>
 
       {/* Spacer */}
@@ -72,11 +77,11 @@ class CreateAccountScreen extends React.Component {
               this.props.navigation.navigate('CreateEmail', {user: this.state.user});
             }}>
 		    <Image style={styles.btnImgLong} source={require("./assets/BTN_TEMPLATE.png")}/>
-			<View style={styles.btnText}>
-				<Text style={styles.btnFont}>Philanthropist</Text>
-			</View>
-		</TouchableOpacity>
-      </View>
+			  <View style={styles.btnText}>
+				  <Text style={styles.btnFont}>Philanthropist</Text>
+			  </View>
+		  </TouchableOpacity>
+    </View>
 
 
 	</View>
@@ -92,6 +97,18 @@ export default createStackNavigator({
   },
   CreateEmail: {
     screen: CreateEmailScreen,
+  },
+  Password: {
+    screen: PasswordScreen,
+  },
+  PhoneNumber: {
+    screen: PhoneNumberScreen,
+  },
+  DateOfBirth: {
+    screen: DateOfBirthScreen
+  },
+  LinkBankAccount: {
+    screen: LinkBankAccountScreen
   },
 }, {
     initialRouteName: 'CreateAccount',
@@ -114,8 +131,8 @@ const styles = StyleSheet.create({
 	flex: 0.1,
   },
   logo: {
-    width: 256,
-	height: 256
+    width: 225,
+	height: 225
   },
 
   btn: {
@@ -140,6 +157,10 @@ const styles = StyleSheet.create({
   title: {
 	fontWeight: 'bold',
 	fontSize: 30,
+  },
+  subtitle: {
+	fontWeight: 'normal',
+	fontSize: 15,
   },
   btnFont: {
 	fontWeight: 'bold',

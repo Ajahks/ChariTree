@@ -2,89 +2,81 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, Button, Alert, TouchableOpacity, TextInput } from 'react-native';
 import { createStackNavigator, } from 'react-navigation';
 
-export default class CreateEmailScreen extends React.Component {
-  
-  constructor(props) {
-    super(props);
-    this.state = { text: '' };
-  } 
-  
-  render() {
-    user = this.props.navigation.getParam('user', 'Error')
+export default class LinkBankAccountScreen extends React.Component {
 
+
+  render() {
     return (
 	<View style={styles.container}>
-	  
+
 	  {/* Spacer */}
       <View style={styles.spacing}>
       </View>
-	  
+
 	  {/* Spacer */}
       <View style={styles.spacing}>
       </View>
-	  
-	  
-	  {/* Prompt */}	
+
+	  {/* Prompt */}
 	  <View style={styles.titlePnl}>
-      <Text style={styles.title}>{user.name}</Text>
+        <Text style={styles.title}>Link your bank account</Text>
       </View>
-	  	
-      {/* Spacer */}		
+
+      {/* Spacer */}
       <View style={styles.spacing}>
       </View>
-	  
+
 	  {/* Spacer */}
 	  <View style={styles.spacing}>
       </View>
-	  
-	  {/* Text Input */}
-	  <TextInput 
-	    style = {{height: 75, width: 300, borderColor: 'gray', borderWidth: 0}}
-		clearTextOnFocus
-		onChangeText={(text) => this.setState({text})}
-		placeholder = 'email@example.com'
-		value ={this.state.text}
-	  />
-	  
-	  
-	  {/* Spacer */}
-	  <View style={styles.spacing}>
-      </View>
-	  
-	  {/* Spacer */}
-	  <View style={styles.spacing}>
-      </View>
-	  
-	  {/* Spacer */}
-	  <View style={styles.spacing}>
-      </View>
-	  
-	  {/* Spacer */}
-	  <View style={styles.spacing}>
-      </View>
-	  
-	  
-	  <View>
-<<<<<<< HEAD
-      <TouchableOpacity style={styles.btn}>
-=======
+
+	<View>
 	    <TouchableOpacity style={styles.btn}
             onPress={() => {
-              this.props.navigation.navigate('Password');
+              this.props.navigation.navigate('MainPage');
             }}>
->>>>>>> ed535c04f516f4f771ebc28b290880bb75fb5555
 		    <Image style={styles.btnImgLong} source={require("../assets/BTN_TEMPLATE.png")}/>
 			  <View style={styles.btnText}>
-				  <Text style={styles.btnFont}>Continue</Text>
+				  <Text style={styles.btnFont}>Link Bank</Text>
 			  </View>
-		  </TouchableOpacity>
+		</TouchableOpacity>
     </View>
-	  
-	  
+
+
+	  {/* Spacer */}
+	  <View style={styles.spacing}>
+      </View>
+
+	  {/* Spacer */}
+	  <View style={styles.spacing}>
+      </View>
+
+	  {/* Spacer */}
+	  <View style={styles.spacing}>
+      </View>
+
+	  {/* Spacer */}
+	  <View style={styles.spacing}>
+      </View>
+
+
+	<View>
+	    <TouchableOpacity style={styles.btn}
+            onPress={() => {
+              this.props.navigation.navigate('MainPage');
+            }}>
+		    <Image style={styles.btnImgLong} source={require("../assets/BTN_TEMPLATE.png")}/>
+			  <View style={styles.btnText}>
+				  <Text style={styles.btnFont}>Skip</Text>
+			  </View>
+		</TouchableOpacity>
+    </View>
+
+
 	</View>
     );
   }
-  
+
 }
 
 
@@ -96,13 +88,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
 	flexDirection: 'column'
-	
+
   },
-  
+
   spacing: {
 	flex: 0.1,
   },
-  
+
   btn: {
     shadowColor: '#303838',
     shadowOffset: { width: 0, height: 5 },
@@ -111,7 +103,7 @@ const styles = StyleSheet.create({
   },
   btnImgLong: {
     height: 75,
-    width: 225	
+    width: 225
   },
   btnText: {
 	position: 'absolute',
@@ -120,7 +112,7 @@ const styles = StyleSheet.create({
 	alignItems: 'center',
 	justifyContent: 'center',
   },
-  
+
   //text
   title: {
 	fontWeight: 'bold',
