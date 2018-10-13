@@ -1,92 +1,69 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, Button, Alert, TouchableOpacity } from 'react-native';
-import { createStackNavigator,StackActions, NavigationActions } from 'react-navigation';
-import CreateEmailScreen from './src/CreateEmail.js'
+import { createStackNavigator, } from 'react-navigation';
 
-
-class CreateAccountScreen extends React.Component {
+export default class CreateEmailScreen extends React.Component {
   render() {
     return (
 	<View style={styles.container}>
 	  {/* Spacer */}
       <View style={styles.spacing}>
       </View>
-
+	  
 	  {/* Spacer */}
       <View style={styles.spacing}>
       </View>
-
-
-	  <View style={styles.titlePnl}>
-	    <Image
-		  style={styles.logo}
-          source={require('./assets/ICN_LOGO.png')}
-        />
-        <Text style={styles.title}>Welcome to ChariTree.</Text>
-      </View>
-
-      {/* Spacer */}
+	  
+	  {/* Spacer */}
       <View style={styles.spacing}>
       </View>
-
+	  
+	  {/* Spacer */}
+      <View style={styles.spacing}>
+      </View>
+	  
+	  {/* Prompt */}	
+	  <View style={styles.titlePnl}>
+        <Text style={styles.title}>What is your email?</Text>
+      </View>
+	  	
+      {/* Spacer */}		
+      <View style={styles.spacing}>
+      </View>
+	  
 	  {/* Spacer */}
 	  <View style={styles.spacing}>
       </View>
-
+	  
+	  
+	  
+	  {/* Spacer */}
+	  <View style={styles.spacing}>
+      </View>
+	  
+	  
+	  {/* Spacer */}
+	  <View style={styles.spacing}>
+      </View>
+	  
 	  <View>
 	    <TouchableOpacity style={styles.btn}>
-		    <Image style={styles.btnImgLong} source={require("./assets/BTN_TEMPLATE.png")}/>
-			<View style={styles.btnText}>
-				<Text style={styles.btnFont}>Nonprofit Organization</Text>
-			</View>
-		</TouchableOpacity>
-      </View>
-
-	  {/* Spacer */}
-	  <View style={styles.spacing}>
-      </View>
-
-	  <Text style={styles.title}>Or</Text>
-
-	  {/* Spacer */}
-	  <View style={styles.spacing}>
-      </View>
-
-	  <View>
-	    <TouchableOpacity style={styles.btn}
-            onPress={() => {
-            this.props.navigation.dispatch(StackActions.reset({
-              index: 0,
-              actions: [
-                NavigationActions.navigate({ routeName: 'CreateEmail' })
-              ],
-            }))
-          }}>
 		    <Image style={styles.btnImgLong} source={require("./assets/BTN_TEMPLATE.png")}/>
 			<View style={styles.btnText}>
 				<Text style={styles.btnFont}>Philanthropist</Text>
 			</View>
 		</TouchableOpacity>
       </View>
-
-
+	  
+	  
 	</View>
     );
   }
-
-
+  
+  
 }
 
-export default createStackNavigator({
-  CreateAccount: {
-    screen: CreateAccountScreen,
-  },
-  CreateEmail: {
-    screen: CreateEmailScreen,
-  },
-}, {
-    initialRouteName: 'CreateAccount',
-});
+
 
 const styles = StyleSheet.create({
   container: {
@@ -95,20 +72,20 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
 	flexDirection: 'column'
-
+	
   },
   titlePnl: {
 	alignItems: 'center',
-
+	
   },
   spacing: {
 	flex: 0.1,
   },
   logo: {
-    width: 256,
-	height: 256
+    width: 225,
+	height: 225
   },
-
+  
   btn: {
     shadowColor: '#303838',
     shadowOffset: { width: 0, height: 5 },
@@ -117,7 +94,7 @@ const styles = StyleSheet.create({
   },
   btnImgLong: {
     height: 75,
-    width: 225
+    width: 225	
   },
   btnText: {
 	position: 'absolute',
@@ -126,11 +103,15 @@ const styles = StyleSheet.create({
 	alignItems: 'center',
 	justifyContent: 'center',
   },
-
+  
   //text
   title: {
 	fontWeight: 'bold',
 	fontSize: 30,
+  },
+  subtitle: {
+	fontWeight: 'normal',
+	fontSize: 20,
   },
   btnFont: {
 	fontWeight: 'bold',
