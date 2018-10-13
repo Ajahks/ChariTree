@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, Button, Alert, TouchableOpacity } from 'react-native';
-import { createStackNavigator, StackActions, NavigationActions } from 'react-navigation';
-import CreateAccountScreen from './src/CreateAccount.js'
+import { createStackNavigator,StackActions, NavigationActions } from 'react-navigation';
+import CreateEmailScreen from './src/CreateEmail.js'
 
 
-class HomeScreen extends React.Component {
+class CreateAccountScreen extends React.Component {
   render() {
     return (
 	<View style={styles.container}>
@@ -58,7 +58,7 @@ class HomeScreen extends React.Component {
             this.props.navigation.dispatch(StackActions.reset({
               index: 0,
               actions: [
-                NavigationActions.navigate({ routeName: 'CreateAccount' })
+                NavigationActions.navigate({ routeName: 'CreateEmail' })
               ],
             }))
           }}>
@@ -78,14 +78,14 @@ class HomeScreen extends React.Component {
 }
 
 export default createStackNavigator({
-  Home: {
-    screen: HomeScreen,
-  },
   CreateAccount: {
     screen: CreateAccountScreen,
   },
+  CreateEmail: {
+    screen: CreateEmailScreen,
+  },
 }, {
-    initialRouteName: 'Home',
+    initialRouteName: 'CreateAccount',
 });
 
 const styles = StyleSheet.create({
