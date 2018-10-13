@@ -10,6 +10,8 @@ export default class LegalNameEntryScreen extends React.Component {
   }
 
   render() {
+    user = this.props.navigation.getParam('user', 'Error')
+
     return (
 	<View style={styles.container}>
 
@@ -64,7 +66,9 @@ export default class LegalNameEntryScreen extends React.Component {
 	  <View>
 	    <TouchableOpacity style={styles.btn}
             onPress={() => {
-              this.props.navigation.navigate('PhoneNumber');
+              user.name = this.state.text;
+              this.props.navigation.setParams({user: user});
+              this.props.navigation.navigate('PhoneNumber', {user});
             }}>
 		    <Image style={styles.btnImgLong} source={require("../assets/BTN_TEMPLATE.png")}/>
 			  <View style={styles.btnText}>

@@ -16,7 +16,10 @@ class CreateAccountScreen extends React.Component {
     super(props);
     this.state = {
       user: {
+        email: "",
+        password: "", /* Store this value only until user account is created, then delete */
         name: "",
+        phone: "",
         totalDonations: 0,
         interests: [],
         favoriteCharity: "",
