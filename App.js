@@ -5,6 +5,20 @@ import CreateEmailScreen from './src/CreateEmail.js'
 
 
 class CreateAccountScreen extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      user: {
+        name: "",
+        totalDonations: 0,
+        interests: [],
+        favoriteCharity: "",
+        accountCreationDate: 0
+      }
+    }
+  }
+
   render() {
     return (
 	<View style={styles.container}>
@@ -55,7 +69,7 @@ class CreateAccountScreen extends React.Component {
 	  <View>
 	    <TouchableOpacity style={styles.btn}
             onPress={() => {
-              this.props.navigation.navigate('CreateEmail');
+              this.props.navigation.navigate('CreateEmail', {user: this.state.user});
             }}>
 		    <Image style={styles.btnImgLong} source={require("./assets/BTN_TEMPLATE.png")}/>
 			<View style={styles.btnText}>

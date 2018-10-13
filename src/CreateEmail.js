@@ -10,6 +10,8 @@ export default class CreateEmailScreen extends React.Component {
   } 
   
   render() {
+    user = this.props.navigation.getParam('user', 'Error')
+
     return (
 	<View style={styles.container}>
 	  
@@ -24,7 +26,7 @@ export default class CreateEmailScreen extends React.Component {
 	  
 	  {/* Prompt */}	
 	  <View style={styles.titlePnl}>
-        <Text style={styles.title}>What is your email?</Text>
+      <Text style={styles.title}>{user.name}</Text>
       </View>
 	  	
       {/* Spacer */}		
@@ -63,7 +65,7 @@ export default class CreateEmailScreen extends React.Component {
 	  
 	  
 	  <View>
-	    <TouchableOpacity style={styles.btn}>
+      <TouchableOpacity style={styles.btn}>
 		    <Image style={styles.btnImgLong} source={require("../assets/BTN_TEMPLATE.png")}/>
 			<View style={styles.btnText}>
 				<Text style={styles.btnFont}>Continue</Text>
