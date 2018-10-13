@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, Button, Alert, TouchableOpacity, TextInput, Keyboard, TouchableWithoutFeedback } from 'react-native';
+import { StyleSheet, Text, View, Image, Button, Alert, TouchableOpacity, TextInput, Keyboard, TouchableWithoutFeedback, FlatList } from 'react-native';
 import { createStackNavigator, } from 'react-navigation';
 
 export default class MainPageScreen extends React.Component {
@@ -49,6 +49,22 @@ export default class MainPageScreen extends React.Component {
 		<View style={styles.spacing}>
 		</View>
     
+	    {/* Flatlist */}
+		<FlatList
+          data={[
+            {key: 'Devin'},
+            {key: 'Jackson'},
+            {key: 'James'},
+            {key: 'Joel'},
+            {key: 'John'},
+            {key: 'Jillian'},
+            {key: 'Jimmy'},
+            {key: 'Julie'},
+          ]}
+		  
+          renderItem={({item}) => <View style={styles.containerList}><Text style={styles.title}>{item.key}</Text></View>}
+        />
+		
         {/* Spacer */}
         <View style={styles.spacing}>
         </View>
@@ -99,6 +115,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row'
+  },
+  containerList: {
+	backgroundColor: '#fff',
+	flex: 0.9,
+	width: 400,
+	height: 200,
+	alignItems: 'flex-start',
+	justifyContent: 'flex-start',
+	borderWidth: 2,
+	padding: 15,
+	borderColor: '#989898'
+	
   },
   
   titlePnl: {
