@@ -8,7 +8,13 @@ export default class MainPageScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = { text: '' };
-  } 
+  };
+
+  /* vvv This disables the back button vvv */
+  static navigationOptions = {
+    headerLeft: null
+  };
+
   render() {
     user = this.props.navigation.getParam('user', 'Error')
 
