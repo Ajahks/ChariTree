@@ -67,7 +67,9 @@ export default class CreateEmailScreen extends React.Component {
 	  <View>
 	    <TouchableOpacity style={styles.btn}
             onPress={() => {
-              this.props.navigation.navigate('Password');
+              user.email = this.state.text;
+              this.props.navigation.setParams({user: user});
+              this.props.navigation.navigate('Password', {user});
             }}>
 		    <Image style={styles.btnImgLong} source={require("../assets/BTN_TEMPLATE.png")}/>
 			  <View style={styles.btnText}>
