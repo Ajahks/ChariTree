@@ -7,6 +7,7 @@ import PhoneNumberScreen from './src/PhoneNumber.js'
 import DateOfBirthScreen from './src/DateOfBirth.js'
 import LinkBankAccountScreen from './src/LinkBankAccount.js'
 import LegalNameEntryScreen from './src/LegalNameEntry.js'
+import MainPageScreen from './src/MainPage.js'
 
 
 class CreateAccountScreen extends React.Component {
@@ -109,10 +110,13 @@ export default createStackNavigator({
     screen: PhoneNumberScreen,
   },
   DateOfBirth: {
-    screen: DateOfBirthScreen
+    screen: DateOfBirthScreen,
   },
   LinkBankAccount: {
-    screen: LinkBankAccountScreen
+    screen: LinkBankAccountScreen,
+  },
+  MainPage: {
+    screen: MainPageScreen,
   },
 }, {
     initialRouteName: 'CreateAccount',
