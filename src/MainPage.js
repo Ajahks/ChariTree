@@ -9,6 +9,8 @@ export default class MainPageScreen extends React.Component {
     this.state = { text: '' };
   } 
   render() {
+    user = this.props.navigation.getParam('user', 'Error')
+
     return (
 	  <View style={styles.container}>
 		  {/*search nav bar*/}

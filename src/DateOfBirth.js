@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, Button, Alert, TouchableOpacity, TextInput } from 'react-native';
 import { createStackNavigator, } from 'react-navigation';
+import firebase from './firebase.js';
 
 export default class DateOfBirthScreen extends React.Component {
 
@@ -68,6 +69,9 @@ export default class DateOfBirthScreen extends React.Component {
             onPress={() => {
               user.dob = this.state.text;
               this.props.navigation.setParams({user: user});
+
+              firebase.auth().createUserWithEmailAndPassword(user.email, user.password).catch(()=>{console.error(error.message)});
+
               this.props.navigation.navigate('MainPage', {user});
             }}>
 		    <Image style={styles.btnImgLong} source={require("../assets/BTN_TEMPLATE.png")}/>

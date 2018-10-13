@@ -28,6 +28,7 @@ export default class PasswordScreen extends React.Component {
     <View style={styles.titlePnl}>
         <Text style={styles.title}>Set up your password</Text>
       </View>
+      <Text style={styles.subtitle}>Password must be at least 6 characters</Text>
 
     {/* Spacer */}
     <View style={styles.spacing}>
