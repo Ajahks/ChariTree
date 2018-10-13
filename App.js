@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image, Button, Alert, TouchableOpacity } from '
 import { createStackNavigator,StackActions, NavigationActions } from 'react-navigation';
 import CreateEmailScreen from './src/CreateEmail.js'
 import PasswordScreen from './src/Password.js'
+import PhoneNumberScreen from './src/PhoneNumber.js'
 
 
 class CreateAccountScreen extends React.Component {
@@ -82,6 +83,9 @@ export default createStackNavigator({
   },
   Password: {
     screen: PasswordScreen,
+  },
+  PhoneNumber: {
+    screen: PhoneNumberScreen,
   },
 }, {
     initialRouteName: 'CreateAccount',

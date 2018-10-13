@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, Button, Alert, TouchableOpacity, TextInput } from 'react-native';
 import { createStackNavigator, } from 'react-navigation';
 
-export default class PasswordScreen extends React.Component {
+export default class PhoneNumberScreen extends React.Component {
   
   constructor(props) {
     super(props);
@@ -24,7 +24,7 @@ export default class PasswordScreen extends React.Component {
     
     {/* Prompt */}  
     <View style={styles.titlePnl}>
-        <Text style={styles.title}>Set up your password</Text>
+        <Text style={styles.title}>What is your Phone number?</Text>
       </View>
       
     {/* Spacer */}    
@@ -36,11 +36,11 @@ export default class PasswordScreen extends React.Component {
       </View>
     
     {/* Text Input */}
-    <TextInput secureTextEntry={true}
+    <TextInput
       style = {{height: 75, width: 300, borderColor: 'gray', borderWidth: 0}}
     clearTextOnFocus
     onChangeText={(text) => this.setState({text})}
-    placeholder = '*******'
+    placeholder = '(123)456-7890'
     value ={this.state.text}
     />    
     
