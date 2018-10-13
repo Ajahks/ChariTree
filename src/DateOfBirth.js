@@ -64,7 +64,7 @@ export default class DateOfBirthScreen extends React.Component {
 	  <View>
 	    <TouchableOpacity style={styles.btn}
             onPress={() => {
-              this.props.navigation.navigate('LinkBankAccount');
+              this.props.navigation.navigate('MainPage');
             }}>
 		    <Image style={styles.btnImgLong} source={require("../assets/BTN_TEMPLATE.png")}/>
 			  <View style={styles.btnText}>

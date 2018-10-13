@@ -6,6 +6,7 @@ import PasswordScreen from './src/Password.js'
 import PhoneNumberScreen from './src/PhoneNumber.js'
 import DateOfBirthScreen from './src/DateOfBirth.js'
 import LinkBankAccountScreen from './src/LinkBankAccount.js'
+import LegalNameEntryScreen from './src/LegalNameEntry.js'
 
 
 class CreateAccountScreen extends React.Component {
@@ -100,6 +101,9 @@ export default createStackNavigator({
   },
   Password: {
     screen: PasswordScreen,
+  },
+  LegalNameEntry: {
+    screen: LegalNameEntryScreen,
   },
   PhoneNumber: {
     screen: PhoneNumberScreen,
