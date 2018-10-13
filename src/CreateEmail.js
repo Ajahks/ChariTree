@@ -65,14 +65,10 @@ export default class CreateEmailScreen extends React.Component {
 	  
 	  
 	  <View>
-<<<<<<< HEAD
-      <TouchableOpacity style={styles.btn}>
-=======
 	    <TouchableOpacity style={styles.btn}
             onPress={() => {
               this.props.navigation.navigate('Password');
             }}>
->>>>>>> ed535c04f516f4f771ebc28b290880bb75fb5555
 		    <Image style={styles.btnImgLong} source={require("../assets/BTN_TEMPLATE.png")}/>
 			  <View style={styles.btnText}>
 				  <Text style={styles.btnFont}>Continue</Text>
