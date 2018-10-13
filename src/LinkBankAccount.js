@@ -2,34 +2,34 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, Button, Alert, TouchableOpacity, TextInput } from 'react-native';
 import { createStackNavigator, } from 'react-navigation';
 
-export default class DateOfBirthScreen extends React.Component {
-  
-  
+export default class LinkBankAccountScreen extends React.Component {
+
+
   render() {
     return (
 	<View style={styles.container}>
-	  
+
 	  {/* Spacer */}
       <View style={styles.spacing}>
       </View>
-	  
+
 	  {/* Spacer */}
       <View style={styles.spacing}>
       </View>
-	  
-	  {/* Prompt */}	
+
+	  {/* Prompt */}
 	  <View style={styles.titlePnl}>
         <Text style={styles.title}>Link your bank account</Text>
       </View>
-	  	
-      {/* Spacer */}		
+
+      {/* Spacer */}
       <View style={styles.spacing}>
       </View>
-	  
+
 	  {/* Spacer */}
 	  <View style={styles.spacing}>
       </View>
-	  
+
 	<View>
 	    <TouchableOpacity style={styles.btn}
             onPress={() => {
@@ -41,25 +41,25 @@ export default class DateOfBirthScreen extends React.Component {
 			  </View>
 		</TouchableOpacity>
     </View>
-	  
-	  
+
+
 	  {/* Spacer */}
 	  <View style={styles.spacing}>
       </View>
-	  
+
 	  {/* Spacer */}
 	  <View style={styles.spacing}>
       </View>
-	  
+
 	  {/* Spacer */}
 	  <View style={styles.spacing}>
       </View>
-	  
+
 	  {/* Spacer */}
 	  <View style={styles.spacing}>
       </View>
-	  
-	  
+
+
 	<View>
 	    <TouchableOpacity style={styles.btn}
             onPress={() => {
@@ -71,12 +71,12 @@ export default class DateOfBirthScreen extends React.Component {
 			  </View>
 		</TouchableOpacity>
     </View>
-	  
-	  
+
+
 	</View>
     );
   }
-  
+
 }
 
 
@@ -88,13 +88,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
 	flexDirection: 'column'
-	
+
   },
-  
+
   spacing: {
 	flex: 0.1,
   },
-  
+
   btn: {
     shadowColor: '#303838',
     shadowOffset: { width: 0, height: 5 },
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
   },
   btnImgLong: {
     height: 75,
-    width: 225	
+    width: 225
   },
   btnText: {
 	position: 'absolute',
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
 	alignItems: 'center',
 	justifyContent: 'center',
   },
-  
+
   //text
   title: {
 	fontWeight: 'bold',
