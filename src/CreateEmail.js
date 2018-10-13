@@ -26,7 +26,7 @@ export default class CreateEmailScreen extends React.Component {
 	  
 	  {/* Prompt */}	
 	  <View style={styles.titlePnl}>
-      <Text style={styles.title}>{user.name}</Text>
+      <Text style={styles.title}>What is your email?</Text>
       </View>
 	  	
       {/* Spacer */}		
