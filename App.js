@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, Button, Alert, TouchableOpacity } from 'react-native';
 import { createStackNavigator,StackActions, NavigationActions } from 'react-navigation';
 import CreateEmailScreen from './src/CreateEmail.js'
+import PasswordScreen from './src/Password.js'
 
 
 class CreateAccountScreen extends React.Component {
@@ -58,11 +59,11 @@ class CreateAccountScreen extends React.Component {
               this.props.navigation.navigate('CreateEmail');
             }}>
 		    <Image style={styles.btnImgLong} source={require("./assets/BTN_TEMPLATE.png")}/>
-			<View style={styles.btnText}>
-				<Text style={styles.btnFont}>Philanthropist</Text>
-			</View>
-		</TouchableOpacity>
-      </View>
+			  <View style={styles.btnText}>
+				  <Text style={styles.btnFont}>Philanthropist</Text>
+			  </View>
+		  </TouchableOpacity>
+    </View>
 
 
 	</View>
@@ -78,6 +79,9 @@ export default createStackNavigator({
   },
   CreateEmail: {
     screen: CreateEmailScreen,
+  },
+  Password: {
+    screen: PasswordScreen,
   },
 }, {
     initialRouteName: 'CreateAccount',
