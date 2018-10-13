@@ -3,6 +3,9 @@ import { StyleSheet, Text, View, Image, Button, Alert, TouchableOpacity } from '
 import { createStackNavigator, } from 'react-navigation';
 
 export default class CreateEmailScreen extends React.Component {
+  static navigationOptions = {
+    title: 'Create Account',
+  };
   render() {
     return (
 	<View style={styles.container}>
@@ -48,7 +51,7 @@ export default class CreateEmailScreen extends React.Component {
 	  
 	  <View>
 	    <TouchableOpacity style={styles.btn}>
-		    <Image style={styles.btnImgLong} source={require("./assets/BTN_TEMPLATE.png")}/>
+		    <Image style={styles.btnImgLong} source={require("../assets/BTN_TEMPLATE.png")}/>
 			<View style={styles.btnText}>
 				<Text style={styles.btnFont}>Philanthropist</Text>
 			</View>
