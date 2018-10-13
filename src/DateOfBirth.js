@@ -72,7 +72,7 @@ export default class DateOfBirthScreen extends React.Component {
             }}>
 		    <Image style={styles.btnImgLong} source={require("../assets/BTN_TEMPLATE.png")}/>
 			  <View style={styles.btnText}>
-				  <Text style={styles.btnFont}>Continue</Text>
+				  <Text style={styles.btnFont}>Finish</Text>
 			  </View>
 		</TouchableOpacity>
     </View>
