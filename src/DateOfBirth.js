@@ -64,13 +64,13 @@ export default class DateOfBirthScreen extends React.Component {
 	  <View>
 	    <TouchableOpacity style={styles.btn}
             onPress={() => {
-              this.props.navigation.navigate('Password');
+              this.props.navigation.navigate('IdentityVerification');
             }}>
 		    <Image style={styles.btnImgLong} source={require("../assets/BTN_TEMPLATE.png")}/>
 			  <View style={styles.btnText}>
 				  <Text style={styles.btnFont}>Continue</Text>
 			  </View>
-		  </TouchableOpacity>
+		</TouchableOpacity>
     </View>
 	  
 	  
