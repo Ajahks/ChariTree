@@ -9,6 +9,7 @@ import LinkBankAccountScreen from './src/LinkBankAccount.js'
 import LegalNameEntryScreen from './src/LegalNameEntry.js'
 import MainPageScreen from './src/MainPage.js'
 
+import styles from './src/styles.js'
 import firebase from './src/firebase.js'
 
 
@@ -127,57 +128,3 @@ export default createStackNavigator({
     initialRouteName: 'CreateAccount',
 });
 
-const styles = StyleSheet.create({
-  container: {
-	flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-	flexDirection: 'column'
-
-  },
-  titlePnl: {
-	alignItems: 'center',
-
-  },
-  spacing: {
-	flex: 0.1,
-  },
-  logo: {
-    width: 225,
-	height: 225
-  },
-
-  btn: {
-    shadowColor: '#303838',
-    shadowOffset: { width: 0, height: 5 },
-    shadowRadius: 10,
-    shadowOpacity: 0.35,
-  },
-  btnImgLong: {
-    height: 75,
-    width: 225
-  },
-  btnText: {
-	position: 'absolute',
-	height: 75,
-	width: 225,
-	alignItems: 'center',
-	justifyContent: 'center',
-  },
-
-  //text
-  title: {
-	fontWeight: 'bold',
-	fontSize: 30,
-  },
-  subtitle: {
-	fontWeight: 'normal',
-	fontSize: 15,
-  },
-  btnFont: {
-	fontWeight: 'bold',
-	fontSize: 17,
-	color: 'white',
-  }
-});

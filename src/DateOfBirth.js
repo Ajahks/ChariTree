@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, Button, Alert, TouchableOpacity, TextInput } from 'react-native';
 import { createStackNavigator, } from 'react-navigation';
+import styles from './styles.js'
 import firebase from './firebase.js';
 
 export default class DateOfBirthScreen extends React.Component {
@@ -87,53 +88,3 @@ export default class DateOfBirthScreen extends React.Component {
   }
 
 }
-
-
-
-const styles = StyleSheet.create({
-  container: {
-	flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-	flexDirection: 'column'
-
-  },
-
-  spacing: {
-	flex: 0.1,
-  },
-
-  btn: {
-    shadowColor: '#303838',
-    shadowOffset: { width: 0, height: 5 },
-    shadowRadius: 10,
-    shadowOpacity: 0.35,
-  },
-  btnImgLong: {
-    height: 75,
-    width: 225
-  },
-  btnText: {
-	position: 'absolute',
-	height: 75,
-	width: 225,
-	alignItems: 'center',
-	justifyContent: 'center',
-  },
-
-  //text
-  title: {
-	fontWeight: 'bold',
-	fontSize: 30,
-  },
-  subtitle: {
-	fontWeight: 'normal',
-	fontSize: 20,
-  },
-  btnFont: {
-	fontWeight: 'bold',
-	fontSize: 17,
-	color: 'white',
-  }
-});
