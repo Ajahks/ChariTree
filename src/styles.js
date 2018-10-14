@@ -10,13 +10,28 @@ export default StyleSheet.create({
     flexDirection: 'column'
   
   },
-  containerLeftAdj: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'flex-start',
+  profilePanel: {
+    flex: 0.9,
+	width: 390,
+	height: 1000,
+    backgroundColor: '#777777',
+    alignItems: 'center',
     justifyContent: 'flex-start',
     flexDirection: 'column',
 	padding: 15,
+	borderRadius: 15,
+  
+  },
+  bioPanel: {
+    flex: 0.9,
+	width: 335,
+	height: 125,
+    backgroundColor: '#AAAAAA',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
+    flexDirection: 'column',
+	padding: 6,
+	borderRadius: 15,
   
   },
   containerRow: {
@@ -40,6 +55,17 @@ export default StyleSheet.create({
     shadowRadius: 10,
     shadowOpacity: 0.35,
 	
+  },
+  panelInfo: {
+	flex: 0.8,
+    width: 360,
+    height: 650,
+    backgroundColor: '#CCCCCC',	
+	alignItems: 'flex-start',
+    justifyContent: 'flex-start',
+	flexDirection: 'column',
+	padding: 10,
+	borderRadius: 15,
   },
   titlePnl: {
   alignItems: 'center',
@@ -98,6 +124,11 @@ export default StyleSheet.create({
 	width: 365,
     fontWeight: 'normal',
     fontSize: 15,
+  },
+  bio: {
+	width: 200,
+    fontWeight: 'normal',
+    fontSize: 13,
   },
   btnFont: {
     fontWeight: 'bold',

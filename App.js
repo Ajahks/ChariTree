@@ -49,7 +49,7 @@ class CreateAccountScreen extends React.Component {
 		  style={styles.logo}
           source={require('./assets/ICN_LOGO.png')}
         />
-        <Text style={styles.title}>Welcome to ChariTree.</Text>
+        <Text style={styles.title}>Welcome to ChariTree</Text>
         <Text style={styles.subtitle}>Create an account.</Text>
       </View>
 
@@ -74,7 +74,7 @@ class CreateAccountScreen extends React.Component {
 	  <View style={styles.spacing}>
       </View>
 
-	  <Text style={styles.title}>Or</Text>
+	  <Text style={styles.title}>or</Text>
 
 	  {/* Spacer */}
 	  <View style={styles.spacing}>

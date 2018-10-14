@@ -51,37 +51,51 @@ export default class PhilProfileScreen extends React.Component {
 			<Image style={styles.btnSmall} source={require("../assets/ICN_SEARCH.png")}/>
 		  </TouchableOpacity>
 		</View>
-		<Text style={styles.title}>USER'S NAME</Text>
 		
-        {/* Spacer */}
-        <View style={styles.spacing}>
-        </View>
-    
-        {/* Spacer */}    
-        <View style={styles.spacing}>
-        </View>
-    
-        {/* Spacer */}
-        <View style={styles.spacing}>
-        </View>
-      
-        {/* Spacer */}
-        <View style={styles.spacing}>
-        </View>
-    
-        {/* Spacer */}
-        <View style={styles.spacing}>
-        </View>
-    
-        {/* Spacer */}
-        <View style={styles.spacing}>
-        </View>
-    
-        {/* Spacer */}
-        <View style={styles.spacing}>
-        </View>
+		{/*Header text with name*/}
 		
-      </View> 
+		<Text style={styles.title}>user.name </Text>
+		
+		{/*Panel for account info*/}
+		<View style={styles.profilePanel}>
+		  <View style={styles.containerRow}>
+		    <Image
+		      style={{height: 128, width: 128}}
+              source={require('../assets/ICN_USER.png')}
+            />
+			<View style = {{width: 20}}></View>
+			<View style={styles.bioPanel}>
+			  <Text style = {styles.bio}>Hello!  Welcome to my profile!  Please make yourself at home!</Text>
+			</View>
+		  </View>
+		  
+		  <View style = {{height: 20}}></View>
+		  
+		  <View style={styles.panelInfo}>
+		    <Text style = {styles.titleSmall}>Contributed Value: $0.00</Text>
+			<Text style = {styles.subtitle}>Favorite Charity: ...</Text>
+			<View style = {{height: 20}}></View>
+			<Text style = {styles.subtitle}>Interests: </Text>
+			<Text style = {styles.subtitle}>#interest1 #interest2 #interest3</Text>
+			<Text style = {styles.subtitle}>#interest4 #interest5 #interest6</Text>
+			
+			<View style = {{height: 20}}></View>
+			<Text style = {styles.subtitle}>Account Created: MM/DD/YYYY</Text>
+		  </View>
+		  <View style = {{height: 30}}></View>
+		  <TouchableOpacity style={styles.btn}
+            onPress={() => {
+            user.password = this.state.text;
+            this.props.navigation.setParams({user: user});
+            this.props.navigation.navigate('CreateAccount', {user});
+          }}>
+			<Image style={styles.btnImgLong} source={require("../assets/BTN_TEMPLATE_RED.png")}/>
+            <View style={styles.btnText}>
+              <Text style={styles.btnFont}>Log Out</Text>
+            </View>
+          </TouchableOpacity>
+		</View>
+	  </View>
     );
   }
   

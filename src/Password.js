@@ -76,8 +76,8 @@ export default class PasswordScreen extends React.Component {
       <View style={styles.btnText}>
         <Text style={styles.btnFont}>Continue</Text>
       </View>
-    </TouchableOpacity>
-      </View>
+      </TouchableOpacity>
+    </View>
 
 
   </View>
