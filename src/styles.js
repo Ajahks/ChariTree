@@ -144,6 +144,11 @@ export default StyleSheet.create({
     fontWeight: 'normal',
     fontSize: 13,
   },
+  list: {
+	width: 300,
+    fontWeight: 'normal',
+    fontSize: 13,
+  },
   btnFont: {
     fontWeight: 'bold',
     fontSize: 18,

@@ -70,12 +70,13 @@ export default class NonProfit2Screen extends React.Component {
       <Text style ={styles.mission}>Mission Statement: The American Red Cross prevents and alleviates human 
       suffering in the face of emergencies by mobilizing the power of volunteers and 
       the generosity of donors.​</Text>
+	  <View style = {{flex: 0.08}}></View>
       <View style={styles.panelInfo}>
         <ScrollView>
-          <Text style = {styles.bio}>Title of Accomplishments</Text>
-          <Text style ={styles.bio}>1927: Provided relief for victims of the Mississippi River floods.</Text>
-          <Text style ={styles.bio}>1940: Developed first nationwide civilian blood program.</Text>
-          <Text style ={styles.bio}>1940: Provided relief for victims of severe drought and the Depression.</Text>
+          <Text style = {styles.list}>Title of Accomplishments</Text>
+          <Text style ={styles.list}>1927: Provided relief for victims of the Mississippi River floods.</Text>
+          <Text style ={styles.list}>1940: Developed first nationwide civilian blood program.</Text>
+          <Text style ={styles.list}>1940: Provided relief for victims of severe drought and the Depression.</Text>
         </ScrollView>
       </View>
       <View style = {{flex: .1}}></View>
