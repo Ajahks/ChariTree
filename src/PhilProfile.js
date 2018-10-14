@@ -87,7 +87,7 @@ export default class PhilProfileScreen extends React.Component {
             onPress={() => {
             user.password = this.state.text;
             this.props.navigation.setParams({user: user});
-            this.props.navigation.navigate('Login');
+            this.props.navigation.navigate('CreateAccount', {user});
           }}>
 			<Image style={styles.btnImgMed} source={require("../assets/BTN_TEMPLATE_RED.png")}/>
             <View style={styles.btnTextSmaller}>
