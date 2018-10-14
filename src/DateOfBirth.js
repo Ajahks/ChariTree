@@ -71,7 +71,7 @@ export default class DateOfBirthScreen extends React.Component {
               user.dob = this.state.text;
               this.props.navigation.setParams({user: user});
 
-              firebase.auth().createUserWithEmailAndPassword(user.email, user.password).catch(()=>{console.log(error.message)});
+              firebase.auth().createUserWithEmailAndPassword(user.email, user.password).catch(()=>{});
 
               this.props.navigation.navigate('MainPage', {user});
             }}>
