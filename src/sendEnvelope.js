@@ -24,8 +24,8 @@ const accountId = '6807327';
 
 
 //Recipient Information goes here
-const recipientName = 'Bingjie';
-const recipientEmail = 'biz003@ucsd.edu';
+const recipientName = '';
+const recipientEmail = '';
 
 //Point this to the document you wish to send's location on the local machine. Default location is __workingDir\fileName
 const fileName = '../assets/ChariTree.pdf'; //IE: test.pdf

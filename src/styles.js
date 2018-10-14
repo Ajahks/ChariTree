@@ -118,7 +118,10 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 30,
   },
-
+  mission: {
+    color: 'white',
+    fontSize: 15,
+  },
   titleSmall: {
 	width: 400,
 	height: 50,

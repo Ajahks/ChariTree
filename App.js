@@ -9,6 +9,8 @@ import LinkBankAccountScreen from './src/LinkBankAccount.js'
 import LegalNameEntryScreen from './src/LegalNameEntry.js'
 import MainPageScreen from './src/MainPage.js'
 import PhilProfileScreen from './src/PhilProfile.js'
+import NonProfit2Screen from './src/NonProfit2.js'
+import LoginScreen from './src/Login.js'
 
 import styles from './src/styles.js'
 import firebase from './src/firebase.js'
@@ -92,6 +94,12 @@ class CreateAccountScreen extends React.Component {
 		  </TouchableOpacity>
     </View>
 
+    <TouchableOpacity onPress={() => {
+      this.props.navigation.navigate('Login');
+  }} style={{padding: 10}}>
+        <Text>Login</Text>
+    </TouchableOpacity>
+
 
 	</View>
     );
@@ -127,8 +135,13 @@ export default createStackNavigator({
   },
   PhilProfile: {
 	screen: PhilProfileScreen,
-  }
+  },
+  NonProfit2: {
+  screen: NonProfit2Screen,
+  },
+  Login: {
+      screen: LoginScreen,
+  },
 }, {
     initialRouteName: 'CreateAccount',
 });
-
