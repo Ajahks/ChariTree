@@ -101,7 +101,7 @@ export default StyleSheet.create({
   btnText: {
     position: 'absolute',
     height: 75,
-    width: 215,
+    width: 225,
     alignItems: 'center',
     justifyContent: 'center',
   },
