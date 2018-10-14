@@ -61,8 +61,8 @@ export default class MainPageScreen extends React.Component {
 	    {/* Flatlist */}
 		<FlatList
           data={[
-            {key: 'Devin'},
-            {key: 'Jackson'},
+            {key: 'Do Something'},
+            {key: 'Donors Choose'},
             {key: 'James'},
             {key: 'Joel'},
             {key: 'John'},
@@ -71,7 +71,10 @@ export default class MainPageScreen extends React.Component {
             {key: 'Julie'},
           ]}
 		  
-          renderItem={({item}) => <View style={styles.containerList}><Text style={styles.title}>{item.key}</Text></View>}
+          renderItem={({item}) => <View style={styles.containerList}><Text style={styles.title}>{item.key}</Text></View>
+          <View style={{height = 10}}>
+          </View>
+		  }
         />
 		
         {/* Spacer */}
