@@ -9,6 +9,7 @@ import LinkBankAccountScreen from './src/LinkBankAccount.js'
 import LegalNameEntryScreen from './src/LegalNameEntry.js'
 import MainPageScreen from './src/MainPage.js'
 import PhilProfileScreen from './src/PhilProfile.js'
+import NonProfit2Screen from './src/NonProfit2.js'
 
 import styles from './src/styles.js'
 import firebase from './src/firebase.js'
@@ -127,7 +128,10 @@ export default createStackNavigator({
   },
   PhilProfile: {
 	screen: PhilProfileScreen,
-  }
+  },
+  NonProfit2: {
+  screen: NonProfit2Screen,
+  },
 }, {
     initialRouteName: 'CreateAccount',
 });

@@ -63,34 +63,34 @@ export default class PhilProfileScreen extends React.Component {
 		      style={{height: 128, width: 128}}
               source={require('../assets/ICN_USER.png')}
             />
-			<View style = {{width: 20}}></View>
+			<View style = {{flex: 0.1}}></View>
 			<View style={styles.bioPanel}>
 			  <Text style = {styles.bio}>Hello!  Welcome to my profile!  Please make yourself at home!</Text>
 			</View>
 		  </View>
 		  
-		  <View style = {{height: 20}}></View>
+		  <View style = {{flex: 0.08}}></View>
 		  
 		  <View style={styles.panelInfo}>
-		    <Text style = {styles.titleSmall}>Contributed Value: $0.00</Text>
+		    <Text style = {styles.subtitle}>Contributed Value: $0.00</Text>
 			<Text style = {styles.subtitle}>Favorite Charity: ...</Text>
-			<View style = {{height: 20}}></View>
-			<Text style = {styles.subtitle}>Interests: </Text>
-			<Text style = {styles.subtitle}>#interest1 #interest2 #interest3</Text>
-			<Text style = {styles.subtitle}>#interest4 #interest5 #interest6</Text>
+			<View style = {{flex: 0.02}}></View>
+			<Text style = {styles.description}>Interests: </Text>
+			<Text style = {styles.description}>#interest1 #interest2 #interest3</Text>
+			<Text style = {styles.description}>#interest4 #interest5 #interest6</Text>
 			
-			<View style = {{height: 20}}></View>
+			<View style = {{flex: 0.04}}></View>
 			<Text style = {styles.subtitle}>Account Created: MM/DD/YYYY</Text>
 		  </View>
-		  <View style = {{height: 30}}></View>
+		  <View style = {{flex: .1}}></View>
 		  <TouchableOpacity style={styles.btn}
             onPress={() => {
             user.password = this.state.text;
             this.props.navigation.setParams({user: user});
             this.props.navigation.navigate('CreateAccount', {user});
           }}>
-			<Image style={styles.btnImgLong} source={require("../assets/BTN_TEMPLATE_RED.png")}/>
-            <View style={styles.btnText}>
+			<Image style={styles.btnImgMed} source={require("../assets/BTN_TEMPLATE_RED.png")}/>
+            <View style={styles.btnTextSmaller}>
               <Text style={styles.btnFont}>Log Out</Text>
             </View>
           </TouchableOpacity>

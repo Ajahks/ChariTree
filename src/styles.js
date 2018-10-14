@@ -90,6 +90,10 @@ export default StyleSheet.create({
     height: 75,
     width: 225  
   },
+  btnImgMed: {
+    height: 60,
+    width: 180  
+  },
   btnSmall: {
     height: 30,
     width: 30	
@@ -97,7 +101,14 @@ export default StyleSheet.create({
   btnText: {
     position: 'absolute',
     height: 75,
-    width: 225,
+    width: 215,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  btnTextSmaller: {
+    position: 'absolute',
+    height: 50,
+    width: 180,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -107,7 +118,10 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 30,
   },
-
+  mission: {
+    color: 'white',
+    fontSize: 15,
+  },
   titleSmall: {
 	width: 400,
 	height: 50,
@@ -132,7 +146,7 @@ export default StyleSheet.create({
   },
   btnFont: {
     fontWeight: 'bold',
-    fontSize: 17,
+    fontSize: 18,
     color: 'white',
   }
 });
