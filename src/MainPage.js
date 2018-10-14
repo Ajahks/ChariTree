@@ -14,7 +14,6 @@ export default class MainPageScreen extends React.Component {
   static navigationOptions = {
     headerLeft: null
   };
-
   render() {
     user = this.props.navigation.getParam('user', 'Error')
 
@@ -25,7 +24,7 @@ export default class MainPageScreen extends React.Component {
 		  {/*Profile button*/}
 		  <TouchableOpacity style={styles.btn} 
 			onPress={() => {
-			  this.props.navigation.navigate('MainPage');
+			  this.props.navigation.navigate('PhilProfile');
 			}}>
 			<Image style={styles.btnSmall} source={require("../assets/ICN_PROFILE.png")}/>
 		  </TouchableOpacity>
@@ -60,18 +59,33 @@ export default class MainPageScreen extends React.Component {
     
 	    {/* Flatlist */}
 		<FlatList
+		    ItemSeparatorComponent={ () => <View style={ { height: 10,} } /> }
           data={[
-            {key: 'Do Something'},
-            {key: 'Donors Choose'},
-            {key: 'James'},
-            {key: 'Joel'},
-            {key: 'John'},
-            {key: 'Jillian'},
-            {key: 'Jimmy'},
-            {key: 'Julie'},
+		    {key: 'American Heart Association',desc: 'From humble beginnings, the AHA has grown into the nation’s oldest and largest voluntary organization dedicated to fighting heart disease and stroke.'},
+			{key: 'American Red Cross',desc: 'Our network of generous donors, volunteers and employees share a mission of preventing and relieving suffering, here at home and around the world.'},
+            {key: 'Do Something',desc: 'Global organization with the goal of motivating young people to make positive change both online and offline through campaigns that make an impact.'},
+            {key: 'Donors Choose',desc: 'Teachers and students all over the U.S. need your help to bring their classroom dreams to life. Get crayons, books, telescopes, field trips, and more for a classroom today.'}, 
+            {key: 'Habitat for Humanity',desc: 'Habitat for Humanity is an organization that helps families build and improve places to call home. We believe affordable housing plays a critical role in strong and stable communities.'},
+            {key: 'Make-A-Wish-Foundation',desc: 'Tens of thousands of volunteers, donors and supporters advance the Make-A-Wish® vision to grant the wish of every child diagnosed with a critical illness.'},
+            {key: 'St. Judes Hospital',desc: 'The mission of St. Jude Children’s Research Hospital is to advance cures, and means of prevention, for pediatric catastrophic diseases through research and treatment.'},
+			{key: 'Teach for America',desc: 'Teach For America is a diverse network of leaders who confront educational inequity by teaching for at least two years and then working with unwavering commitment from every sector of society to create a nation free from this injustice.'},
+            
+            
           ]}
 		  
-          renderItem={({item}) => <View style={styles.containerList}><Text style={styles.title}>{item.key}</Text></View>
+          renderItem={({item}) => <View>
+		    <TouchableOpacity style={styles.containerBtn}
+			  onPress={() => {
+              this.props.navigation.navigate('MainPage', {user});
+			}}>
+			  <View>
+				<Text style={styles.titleSmall}>{item.key}</Text>
+				<Text style={styles.description}>{item.desc}</Text>
+			  </View>
+			</TouchableOpacity>
+		      
+			  
+		  </View>
 		  }
         />
 		

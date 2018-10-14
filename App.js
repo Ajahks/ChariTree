@@ -8,6 +8,7 @@ import DateOfBirthScreen from './src/DateOfBirth.js'
 import LinkBankAccountScreen from './src/LinkBankAccount.js'
 import LegalNameEntryScreen from './src/LegalNameEntry.js'
 import MainPageScreen from './src/MainPage.js'
+import PhilProfileScreen from './src/PhilProfile.js'
 
 import styles from './src/styles.js'
 import firebase from './src/firebase.js'
@@ -124,6 +125,9 @@ export default createStackNavigator({
   MainPage: {
     screen: MainPageScreen,
   },
+  PhilProfile: {
+	screen: PhilProfileScreen,
+  }
 }, {
     initialRouteName: 'CreateAccount',
 });
