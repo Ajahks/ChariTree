@@ -13,7 +13,8 @@ export default class NonProfit2Screen extends React.Component {
 
   /* vvv This disables the back button vvv */
   static navigationOptions = {
-    headerLeft: null
+    headerLeft: null,
+	title: 'CheriTree',
   };
   render() {
     user = this.props.navigation.getParam('user', 'Error')

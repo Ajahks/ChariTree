@@ -21,9 +21,9 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
 	  "bundleIdentifier": "com.CTStudios.ChariTree"
-    }
+    },
 	"android": {
 	  "package": "com.CTStudios.ChariTree"
     }
