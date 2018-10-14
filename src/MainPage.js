@@ -72,8 +72,6 @@ export default class MainPageScreen extends React.Component {
           ]}
 		  
           renderItem={({item}) => <View style={styles.containerList}><Text style={styles.title}>{item.key}</Text></View>
-          <View style={{height = 10}}>
-          </View>
 		  }
         />
 		
