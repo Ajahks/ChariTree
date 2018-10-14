@@ -21,3 +21,15 @@ Created by:  Arren De Manuel, Dylan Greicius, Helen Zhou, Martin Magsombol
   * Lucidchart
     - prototyped the user experience and user interface
     - included visual design of core functionality as well as future use cases to be implemented
+![Welcome Screen](https://i.imgur.com/H9GBrYF.png)
+![Email Screen](https://i.imgur.com/ZvQXKeO.png)
+![Password Screen](https://i.imgur.com/CHtXhNa.png)
+![Name Screen](https://i.imgur.com/MXGjHEP.png)
+![Phone Number Screen](https://i.imgur.com/RpVVJJm.png)
+![Identification Screen](https://i.imgur.com/LuI4RIz.png)
+![Date of Birth Screen](https://i.imgur.com/7DHIq85.png)
+![Link to Bank Screen](https://i.imgur.com/o7tfswx.png)
+![Main Screen](https://i.imgur.com/Zm5sO2F.png)
+![Main Screen (transition)](https://i.imgur.com/QaJL0Fd.png)
+![Philanthropist Profile Screen](https://i.imgur.com/QaJL0Fd.png)
+![Nonprofit #2 Screen](https://i.imgur.com/BK2qheG.png)
