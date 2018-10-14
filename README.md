@@ -10,7 +10,7 @@ Created by:  Arren De Manuel, Dylan Greicius, Helen Zhou, Martin Magsombol
       - On here, users are able to donate to them, and/or subscribe to gain updates about the charity
     - *Philanthropists*  page can be updated with the user's custom profile piture, bio, donation total, interests, and favorite organization
   * Used React Native to design and implement a platform for users to be able to easily donate to nonprofit organizations Inspired by Robinhood.   
-  * DodcuSign API implementation
+  * DocuSign API implementation
     - email verification
     - identity verification (for nonprofit organizations)
     - etc.
