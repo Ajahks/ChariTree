@@ -59,6 +59,7 @@ export default class MainPageScreen extends React.Component {
     
 	    {/* Flatlist */}
 		<FlatList
+		    directionalLockEnabled={true}
 		    ItemSeparatorComponent={ () => <View style={ { height: 10,} } /> }
           data={[
 		    {key: 'American Heart Association',desc: 'From humble beginnings, the AHA has grown into the nation’s oldest and largest voluntary organization dedicated to fighting heart disease and stroke.'},
